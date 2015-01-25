@@ -23,11 +23,10 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 For each record it is provided:
 ======================================
 
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-- Triaxial Angular velocity from the gyroscope. 
-- A 561-feature vector with time and frequency domain variables. 
-- Its activity label. 
-- An identifier of the subject who carried out the experiment.
+- Its test subject ID
+- Its Activity label
+- Average of the Mean for 33 variables.
+- Average of the STD for 33 variables.
 
 The dataset includes the following files:
 =========================================
@@ -43,7 +42,7 @@ The features (which are the column names of "average_good_table.txt") selected f
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (Time Body Acceleration Jerk-XYZ and Time Body Gyro Jerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (Time Body Acceleration Magnitude, Time Gravity Acceleration Magnitude, Time Body Acceleration Jerk Magnitude, Time Body Gyro Magnitude, Time Body Gyro Jerk Magnitude). 
 
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing Freqyency Body Acceleration -XYZ, Freqyency Body Acceleration Jerk-XYZ, fBodyGyro-XYZ, Freqyency Body Acceleration Jerk Magnitude, Frequency Body Gyro Magnitude, Frequency Body Gyro Jerk Magnitude.
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing Freqyency Body Acceleration -XYZ, Freqyency Body Acceleration Jerk-XYZ, Frequency Body Gyro-XYZ, Freqyency Body Acceleration Jerk Magnitude, Frequency Body Gyro Magnitude, Frequency Body Gyro Jerk Magnitude.
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
@@ -51,7 +50,7 @@ These signals were used to estimate variables of the feature vector for each pat
 Time Body Acceleration -XYZ
 Time Gravity Acceleration -XYZ
 Time Body Acceleration Jerk -XYZ
-tBodyGyro -XYZ
+Time Body Gyro -XYZ
 Time Body Gyro Jerk -XYZ
 Time Body Acceleration Magnitude
 Time Gravity Acceleration Magnitude
@@ -60,7 +59,7 @@ Time Body Gyro Magnitude
 Time Body Gyro Jerk Magnitude
 Freqyency Body Acceleration -XYZ
 Freqyency Body Acceleration Jerk -XYZ
-fBodyGyro-XYZ
+Frequency Body Gyro-XYZ
 Freqyency Body Acceleration Magnitude
 Freqyency Body Acceleration Jerk Magnitude
 Frequency Body Gyro Magnitude
@@ -71,13 +70,8 @@ The set of variables that were estimated from these signals are:
 Mean: Mean value
 STD: Standard deviation
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+Additional vectors obtained by averaging the signals in a signal window sample. 
 
-gravityMean
-Time Body Acceleration Mean
-Time Body Acceleration Jerk Mean
-Time Body Gyro Mean
-Time Body Gyro Jerk Mean
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
 

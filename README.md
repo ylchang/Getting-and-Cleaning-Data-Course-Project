@@ -6,12 +6,14 @@ In this repo will can find the following three files for fulfilling the requirem
 The R script for execute the 5 steps listed by the project description.
 
 ##2. READ.md:
-It describes how the script work.
+This markdown file. It describes how the script work.
 
 ##3. Code Book: 
 It describes the variables.
 
 ##How the script work?
+Notice: script "run_analysis.R" uses functions in "dplyr" library.
+
 The script has 5 main sections for execute the 5 steps described by the project description. These 5 steps are:
 >a. Read data in "train" catagory and join them (subject, x and y) together by using cbind().
 

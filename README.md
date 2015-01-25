@@ -1,8 +1,3 @@
-# Getting-and-Cleaning-Data-Course-Project
-Fulfillment of the Project of "Getting and Cleaning Data" Coursera course.
-
-<p><markdown>
-#Markdown Live Editor#
 #Getting and Cleaning Data Project#
 
 In this repo will can find the following three files for fulfilling the requirement of the course project: 
@@ -26,4 +21,3 @@ In this repo will can find the following three files for fulfilling the requirem
 >>f. Modify the labels the data set with descriptive variable names. This is the result of "Step 4" in the project description.
 
 >>g. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. This is the result of "Step 5" in the project description.
-</markdown></p>
